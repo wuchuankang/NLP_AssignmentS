@@ -1,4 +1,5 @@
 wiki_corpus
+wikiextractor
 wiki_corpus.model.syn1neg.npy
 wiki_corpus.model.wv.syn0.npy
 zhwiki200/
