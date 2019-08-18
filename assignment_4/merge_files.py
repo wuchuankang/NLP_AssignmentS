@@ -3,10 +3,12 @@
 '''
 import os
 def merge_corpus():
-    output = open("wiki_corpus","w",encoding="utf-8")
-    input = "./CC"
-    for i in range(3):
-        file_path = os.path.join(input,str("wiki_jieba_0%s.txt"%str(i)))
+    output = open("./wiki_corpus","w",encoding="utf-8")
+    input = "./zhwiki200/CC"
+    file_list = os.listdir(input)
+
+    for i in range(len(file_list)):
+        file_path = os.path.join(input,file_list[i])
         file = open(file_path,"r",encoding="utf-8")
         line = file.readline()
         while line:
