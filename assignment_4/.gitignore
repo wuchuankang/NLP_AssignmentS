@@ -5,4 +5,6 @@ wiki_corpus.model.wv.syn0.npy
 zhwiki200/
 final-news-sentences-cut.txt
 news-sentences-cut.txt
+enhance_model.syn1neg.npy
+enhance_model.wv.syn0.npy
 
