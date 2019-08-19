@@ -3,4 +3,6 @@ wikiextractor
 wiki_corpus.model.syn1neg.npy
 wiki_corpus.model.wv.syn0.npy
 zhwiki200/
+final-news-sentences-cut.txt
+news-sentences-cut.txt
 
