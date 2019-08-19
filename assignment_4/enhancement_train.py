@@ -2,9 +2,12 @@
 在 ./wiki_corpus.model 基础上，添加 ./final-news-sentences-cut.txt 语料库，继续训练
 """
 import os
+import logging
 from gensim.models.word2vec  import Word2Vec
 
 def enhancement_train(new_corpus):
+    logging.basicConfig(format="%(asctime)s:%(levelname)s:%(message)s",level=logging.INFO)
+
     if os.path.exists('./wiki_corpus.model') and os.path.isfile('./wiki_corpus.model'):
         model = Word2Vec.load('./wiki_corpus.model')
         model.build_vocab(new_corpus, update=True)
