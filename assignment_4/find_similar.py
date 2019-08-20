@@ -47,10 +47,13 @@ def similarity(word_1, word_2):
 if __name__=='__main__':
     model = models.Word2Vec.load('./wiki_corpus.model')
 
-    similar_words = get_wordcloud('说')
+    #similar_words = get_wordcloud('说')
     
-    #words = ['说','说道']
-    words = ['腾讯','阿里巴巴']
+    words = ['说','说道']
+    # words = ['腾讯','阿里巴巴']
     similarity(words[0], words[1])
+    similar_words = model.most_similar('说', topn=50)
+    print([word[0] for word in similar_words])
+     
 
 

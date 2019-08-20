@@ -1,5 +1,5 @@
 wiki_corpus
-wikiextractor
+wikiextractor/
 wiki_corpus.model.syn1neg.npy
 wiki_corpus.model.wv.syn0.npy
 zhwiki200/
@@ -7,4 +7,10 @@ final-news-sentences-cut.txt
 news-sentences-cut.txt
 enhance_model.syn1neg.npy
 enhance_model.wv.syn0.npy
+news_tensite_xml.dat
+souhu_news_cut.txt
+sohu_wiki_model.syn1neg.npy
+sohu_wiki_model.wv.syn0.npy
+cut_corpus_set/
+Untitled.ipynb
 
