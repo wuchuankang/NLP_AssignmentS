@@ -6,18 +6,18 @@ import logging
 
 
 
-'''
+"""
 获取一个圆形的mask
-'''
+"""
 def get_mask():
     x,y = np.ogrid[:300,:300]
     mask = (x-150) ** 2 + (y-150)**2 > 130 ** 2
     mask = 255 * mask.astype(int)
     return mask
  
-'''
+"""
 绘制词云
-'''
+"""
 def draw_word_cloud(word_cloud):
     wc = WordCloud(font_path='./SimHei.ttf', background_color="white",mask=get_mask())
     wc.generate_from_frequencies(word_cloud)
